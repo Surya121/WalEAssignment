@@ -29,8 +29,7 @@ class APODView: UIView {
 
     func configure(using model: APODItemViewModel?, completion: @escaping (() -> Void)) {
         if let url = model?.imageUrlString {
-            self.imageView.image = UIImage(named: "Loading")
-            UIImage.loadImageUsingCacheWithUrlString(url) { [weak self] image in
+            ImageDownloader().imageFrom(url) { [weak self] image in
                 if url == model?.imageUrlString {
                     self?.imageView.image = image
                 } else {

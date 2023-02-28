@@ -22,7 +22,6 @@ class PlanetaryAPODManager {
         if var urlComponents = URLComponents(string: urlString) {
             urlComponents.query = "api_key=\(apiKey)"
 
-
             guard let url = urlComponents.url else {
                 return
             }
@@ -32,7 +31,10 @@ class PlanetaryAPODManager {
                     self?.dataTask = nil
                 }
 
-                if let _ = error {
+                if let error = error {
+                    DispatchQueue.main.async {
+                        onFailure(error)
+                    }
                 } else if
                   let data = data,
                   let response = response as? HTTPURLResponse,

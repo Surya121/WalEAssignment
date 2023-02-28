@@ -11,8 +11,8 @@ final class APODViewModel {
     private var manager: PlanetaryAPODManager
     var dataLoaded: ((APODItemViewModel?) -> Void)?
     var showFullScreen: ((APODItemViewModel?) -> Void)?
+    var showToastMessage: (() -> Void)?
     var coordinator: HomeCoordinator?
-
     init (manager: PlanetaryAPODManager, coordinator: HomeCoordinator) {
         self.manager = manager
         self.coordinator = coordinator
@@ -22,6 +22,7 @@ final class APODViewModel {
         self.manager.getAPODData(date: Date()) { statusCode, model in
             if let model {
                 let viewModel = APODItemViewModel(with: model)
+                APODLoader.write(model: viewModel)
                 self.dataLoaded?(viewModel)
             } else {
                 self.showPreviousDataIfFound()
@@ -33,7 +34,8 @@ final class APODViewModel {
 
 
     func showPreviousDataIfFound() {
-
+        self.showToastMessage?()
+        self.dataLoaded?(APODLoader.load())
     }
 
 }

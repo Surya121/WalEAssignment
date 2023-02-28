@@ -13,7 +13,7 @@ protocol CoordinatorProtocol: AnyObject {
 
 final class HomeCoordinator {
     let manager: PlanetaryAPODManager
-    private weak var navigationController: UINavigationController?
+    private var navigationController: UINavigationController = UINavigationController()
 
     init() {
         self.manager = PlanetaryAPODManager()
@@ -46,7 +46,6 @@ final class HomeCoordinator {
         }
 
     }
-
 
 }
 

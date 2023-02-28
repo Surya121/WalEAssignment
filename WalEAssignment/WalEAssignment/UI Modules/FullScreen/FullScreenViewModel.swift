@@ -17,12 +17,15 @@ final class FullScreenViewModel {
     }
 
     func loadData() {
-        UIImage.loadImageUsingCacheWithUrlString(self.model.hdImageUrlString) { [weak self] image in
-            self?.dataLoaded?(image)
+        if let hdImageUrlString = self.model.hdImageUrlString {
+            ImageDownloader().imageFrom(hdImageUrlString) { [weak self] (image) in
+                self?.dataLoaded?(image)
+            }
         }
     }
 
     func backButtonAction() {
         self.popBack?()
     }
+
 }

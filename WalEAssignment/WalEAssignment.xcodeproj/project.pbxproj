@@ -10,7 +10,6 @@
 		960BEC1129AE76C100DB4180 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC1029AE76C100DB4180 /* AppDelegate.swift */; };
 		960BEC1529AE76C100DB4180 /* APODViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC1429AE76C100DB4180 /* APODViewController.swift */; };
 		960BEC1829AE76C100DB4180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960BEC1629AE76C100DB4180 /* Main.storyboard */; };
-		960BEC1B29AE76C100DB4180 /* WalEAssignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC1929AE76C100DB4180 /* WalEAssignment.xcdatamodeld */; };
 		960BEC1D29AE76C200DB4180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960BEC1C29AE76C200DB4180 /* Assets.xcassets */; };
 		960BEC2029AE76C200DB4180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960BEC1E29AE76C200DB4180 /* LaunchScreen.storyboard */; };
 		960BEC2D29AE7F3F00DB4180 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC2C29AE7F3F00DB4180 /* BaseViewController.swift */; };
@@ -24,9 +23,10 @@
 		960BEC4329AE930100DB4180 /* APODView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC4229AE930100DB4180 /* APODView.swift */; };
 		960BEC4529AE931600DB4180 /* APODView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 960BEC4429AE931600DB4180 /* APODView.xib */; };
 		960BEC4729AE964C00DB4180 /* APODItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC4629AE964C00DB4180 /* APODItemViewModel.swift */; };
-		960BEC4B29AEA8D700DB4180 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC4A29AEA8D700DB4180 /* UIImage.swift */; };
 		960BEC4F29AEAF8800DB4180 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC4E29AEAF8800DB4180 /* FullScreenViewController.swift */; };
 		960BEC5129AEB0F200DB4180 /* FullScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC5029AEB0F200DB4180 /* FullScreenViewModel.swift */; };
+		9686AAAD29AF62EE00507BC1 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9686AAAC29AF62EE00507BC1 /* ImageDownloader.swift */; };
+		96A4DAB529AE19A400AB15FE /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A4DAB429AE19A400AB15FE /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,6 @@
 		960BEC1029AE76C100DB4180 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		960BEC1429AE76C100DB4180 /* APODViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewController.swift; sourceTree = "<group>"; };
 		960BEC1729AE76C100DB4180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		960BEC1A29AE76C100DB4180 /* WalEAssignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WalEAssignment.xcdatamodel; sourceTree = "<group>"; };
 		960BEC1C29AE76C200DB4180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		960BEC1F29AE76C200DB4180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		960BEC2129AE76C200DB4180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,9 +48,10 @@
 		960BEC4229AE930100DB4180 /* APODView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODView.swift; sourceTree = "<group>"; };
 		960BEC4429AE931600DB4180 /* APODView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = APODView.xib; sourceTree = "<group>"; };
 		960BEC4629AE964C00DB4180 /* APODItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODItemViewModel.swift; sourceTree = "<group>"; };
-		960BEC4A29AEA8D700DB4180 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		960BEC4E29AEAF8800DB4180 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
 		960BEC5029AEB0F200DB4180 /* FullScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewModel.swift; sourceTree = "<group>"; };
+		9686AAAC29AF62EE00507BC1 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		96A4DAB429AE19A400AB15FE /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,6 @@
 				960BEC1C29AE76C200DB4180 /* Assets.xcassets */,
 				960BEC1E29AE76C200DB4180 /* LaunchScreen.storyboard */,
 				960BEC2129AE76C200DB4180 /* Info.plist */,
-				960BEC1929AE76C100DB4180 /* WalEAssignment.xcdatamodeld */,
 			);
 			path = WalEAssignment;
 			sourceTree = "<group>";
@@ -131,7 +130,8 @@
 			children = (
 				960BEC3229AE800B00DB4180 /* Storyboardable.swift */,
 				960BEC3A29AE85AD00DB4180 /* Constants.swift */,
-				960BEC4A29AEA8D700DB4180 /* UIImage.swift */,
+				9686AAAC29AF62EE00507BC1 /* ImageDownloader.swift */,
+				96A4DAB429AE19A400AB15FE /* UIViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -239,6 +239,7 @@
 			files = (
 				960BEC2F29AE7FA000DB4180 /* APODViewModel.swift in Sources */,
 				960BEC3B29AE85AD00DB4180 /* Constants.swift in Sources */,
+				96A4DAB529AE19A400AB15FE /* UIViewController.swift in Sources */,
 				960BEC3929AE840B00DB4180 /* APODResponseParser.swift in Sources */,
 				960BEC5129AEB0F200DB4180 /* FullScreenViewModel.swift in Sources */,
 				960BEC1529AE76C100DB4180 /* APODViewController.swift in Sources */,
@@ -247,12 +248,11 @@
 				960BEC4329AE930100DB4180 /* APODView.swift in Sources */,
 				960BEC3329AE800B00DB4180 /* Storyboardable.swift in Sources */,
 				960BEC2D29AE7F3F00DB4180 /* BaseViewController.swift in Sources */,
+				9686AAAD29AF62EE00507BC1 /* ImageDownloader.swift in Sources */,
 				960BEC3729AE83EA00DB4180 /* APODItemModel.swift in Sources */,
 				960BEC3529AE83DB00DB4180 /* PlanetaryAPODManager.swift in Sources */,
-				960BEC1B29AE76C100DB4180 /* WalEAssignment.xcdatamodeld in Sources */,
 				960BEC1129AE76C100DB4180 /* AppDelegate.swift in Sources */,
 				960BEC3129AE7FDA00DB4180 /* HomeCoordinator.swift in Sources */,
-				960BEC4B29AEA8D700DB4180 /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,19 +470,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		960BEC1929AE76C100DB4180 /* WalEAssignment.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				960BEC1A29AE76C100DB4180 /* WalEAssignment.xcdatamodel */,
-			);
-			currentVersion = 960BEC1A29AE76C100DB4180 /* WalEAssignment.xcdatamodel */;
-			path = WalEAssignment.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 960BEC0529AE76C100DB4180 /* Project object */;
 }

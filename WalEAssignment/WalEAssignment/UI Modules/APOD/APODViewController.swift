@@ -26,17 +26,12 @@ final class APODViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setUpUI()
         self.bindViewModel()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.viewModel.loadAPODData()
-    }
-
-    private func setUpUI() {
-
     }
 
     private func bindViewModel() {
@@ -48,6 +43,10 @@ final class APODViewController: UIViewController {
                     self?.viewModel.showFullScreen?(model)
                 }
             }
+        }
+
+        self.viewModel.showToastMessage = { [weak self] in
+            self?.showToast(message: "We are not connected to the internet, showing you the last image we have.")
         }
     }
 }

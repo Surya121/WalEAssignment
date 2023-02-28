@@ -27,7 +27,6 @@ class FullScreenViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.viewModel.loadData()
-
     }
 
     private func setupNavigationBarButtonItem() {
