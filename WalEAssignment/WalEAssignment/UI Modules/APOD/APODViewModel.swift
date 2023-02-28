@@ -35,7 +35,6 @@ final class APODViewModel {
 
     func showPreviousDataIfFound() {
         self.showToastMessage?()
-        self.dataLoaded?(APODLoader.load())
     }
 
 }

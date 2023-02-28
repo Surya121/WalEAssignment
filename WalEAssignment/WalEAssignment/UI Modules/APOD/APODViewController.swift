@@ -46,7 +46,16 @@ final class APODViewController: UIViewController {
         }
 
         self.viewModel.showToastMessage = { [weak self] in
-            self?.showToast(message: "We are not connected to the internet, showing you the last image we have.")
+            guard let weakself = self else { return }
+
+            let alert = UIAlertController(title: "No Connection", message: "We are not connected to the internet, showing you the last image we have.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (_) in
+                self?.viewModel.dataLoaded?(APODLoader.load())
+            }))
+
+            weakself.present(alert, animated: true, completion: {
+                print("completion block")
+            })
         }
     }
 }

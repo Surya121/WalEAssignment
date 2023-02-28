@@ -14,7 +14,7 @@ class PlanetaryAPODManager {
 
     func getAPODData(date: Date,
                      onSuccess: @escaping (_ statusCode: Int, _ models: APODItemModel?) -> Void,
-                     onFailure: @escaping (_ error: Error) -> Void) {
+                     onFailure: @escaping (_ error: Error?) -> Void) {
 
         let urlString = Constants.NetworkTansactions.baseURL
         let apiKey = Constants.NetworkTansactions.apiKey
@@ -44,6 +44,10 @@ class PlanetaryAPODManager {
                           onSuccess(response.statusCode, model)
                       }
                   }
+                } else {
+                    DispatchQueue.main.async {
+                        onFailure(nil)
+                    }
                 }
             })
         }

@@ -26,7 +26,6 @@
 		960BEC4F29AEAF8800DB4180 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC4E29AEAF8800DB4180 /* FullScreenViewController.swift */; };
 		960BEC5129AEB0F200DB4180 /* FullScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC5029AEB0F200DB4180 /* FullScreenViewModel.swift */; };
 		9686AAAD29AF62EE00507BC1 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9686AAAC29AF62EE00507BC1 /* ImageDownloader.swift */; };
-		96A4DAB529AE19A400AB15FE /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A4DAB429AE19A400AB15FE /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +50,6 @@
 		960BEC4E29AEAF8800DB4180 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
 		960BEC5029AEB0F200DB4180 /* FullScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewModel.swift; sourceTree = "<group>"; };
 		9686AAAC29AF62EE00507BC1 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
-		96A4DAB429AE19A400AB15FE /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +129,6 @@
 				960BEC3229AE800B00DB4180 /* Storyboardable.swift */,
 				960BEC3A29AE85AD00DB4180 /* Constants.swift */,
 				9686AAAC29AF62EE00507BC1 /* ImageDownloader.swift */,
-				96A4DAB429AE19A400AB15FE /* UIViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -239,7 +236,6 @@
 			files = (
 				960BEC2F29AE7FA000DB4180 /* APODViewModel.swift in Sources */,
 				960BEC3B29AE85AD00DB4180 /* Constants.swift in Sources */,
-				96A4DAB529AE19A400AB15FE /* UIViewController.swift in Sources */,
 				960BEC3929AE840B00DB4180 /* APODResponseParser.swift in Sources */,
 				960BEC5129AEB0F200DB4180 /* FullScreenViewModel.swift in Sources */,
 				960BEC1529AE76C100DB4180 /* APODViewController.swift in Sources */,
@@ -407,6 +403,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -435,6 +432,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
