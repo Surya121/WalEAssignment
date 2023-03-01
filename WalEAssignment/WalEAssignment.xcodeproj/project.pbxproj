@@ -17,6 +17,16 @@
 		960BEC2F29AE7FA000DB4180 /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC2E29AE7FA000DB4180 /* APODViewModel.swift */; };
 		960BEC3129AE7FDA00DB4180 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC3029AE7FDA00DB4180 /* HomeCoordinator.swift */; };
 		960BEC3329AE800B00DB4180 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC3229AE800B00DB4180 /* Storyboardable.swift */; };
+		960BEC3529AE83DB00DB4180 /* PlanetaryAPODManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC3429AE83DB00DB4180 /* PlanetaryAPODManager.swift */; };
+		960BEC3729AE83EA00DB4180 /* APODItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC3629AE83EA00DB4180 /* APODItemModel.swift */; };
+		960BEC3929AE840B00DB4180 /* APODResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC3829AE840B00DB4180 /* APODResponseParser.swift */; };
+		960BEC3B29AE85AD00DB4180 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC3A29AE85AD00DB4180 /* Constants.swift */; };
+		960BEC4329AE930100DB4180 /* APODView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC4229AE930100DB4180 /* APODView.swift */; };
+		960BEC4529AE931600DB4180 /* APODView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 960BEC4429AE931600DB4180 /* APODView.xib */; };
+		960BEC4729AE964C00DB4180 /* APODItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC4629AE964C00DB4180 /* APODItemViewModel.swift */; };
+		960BEC4B29AEA8D700DB4180 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC4A29AEA8D700DB4180 /* UIImage.swift */; };
+		960BEC4F29AEAF8800DB4180 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC4E29AEAF8800DB4180 /* FullScreenViewController.swift */; };
+		960BEC5129AEB0F200DB4180 /* FullScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BEC5029AEB0F200DB4180 /* FullScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +42,16 @@
 		960BEC2E29AE7FA000DB4180 /* APODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
 		960BEC3029AE7FDA00DB4180 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		960BEC3229AE800B00DB4180 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		960BEC3429AE83DB00DB4180 /* PlanetaryAPODManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryAPODManager.swift; sourceTree = "<group>"; };
+		960BEC3629AE83EA00DB4180 /* APODItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODItemModel.swift; sourceTree = "<group>"; };
+		960BEC3829AE840B00DB4180 /* APODResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODResponseParser.swift; sourceTree = "<group>"; };
+		960BEC3A29AE85AD00DB4180 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		960BEC4229AE930100DB4180 /* APODView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODView.swift; sourceTree = "<group>"; };
+		960BEC4429AE931600DB4180 /* APODView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = APODView.xib; sourceTree = "<group>"; };
+		960BEC4629AE964C00DB4180 /* APODItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODItemViewModel.swift; sourceTree = "<group>"; };
+		960BEC4A29AEA8D700DB4180 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		960BEC4E29AEAF8800DB4180 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
+		960BEC5029AEB0F200DB4180 /* FullScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +102,9 @@
 		960BEC2729AE7EB400DB4180 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				960BEC3429AE83DB00DB4180 /* PlanetaryAPODManager.swift */,
+				960BEC3629AE83EA00DB4180 /* APODItemModel.swift */,
+				960BEC3829AE840B00DB4180 /* APODResponseParser.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -89,8 +112,8 @@
 		960BEC2829AE7EE800DB4180 /* UI Modules */ = {
 			isa = PBXGroup;
 			children = (
-				960BEC1429AE76C100DB4180 /* APODViewController.swift */,
-				960BEC2E29AE7FA000DB4180 /* APODViewModel.swift */,
+				960BEC4D29AEAF4800DB4180 /* FullScreen */,
+				960BEC4C29AEAF3700DB4180 /* APOD */,
 			);
 			path = "UI Modules";
 			sourceTree = "<group>";
@@ -107,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				960BEC3229AE800B00DB4180 /* Storyboardable.swift */,
+				960BEC3A29AE85AD00DB4180 /* Constants.swift */,
+				960BEC4A29AEA8D700DB4180 /* UIImage.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -117,6 +142,27 @@
 				960BEC2C29AE7F3F00DB4180 /* BaseViewController.swift */,
 			);
 			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		960BEC4C29AEAF3700DB4180 /* APOD */ = {
+			isa = PBXGroup;
+			children = (
+				960BEC1429AE76C100DB4180 /* APODViewController.swift */,
+				960BEC4229AE930100DB4180 /* APODView.swift */,
+				960BEC4429AE931600DB4180 /* APODView.xib */,
+				960BEC2E29AE7FA000DB4180 /* APODViewModel.swift */,
+				960BEC4629AE964C00DB4180 /* APODItemViewModel.swift */,
+			);
+			path = APOD;
+			sourceTree = "<group>";
+		};
+		960BEC4D29AEAF4800DB4180 /* FullScreen */ = {
+			isa = PBXGroup;
+			children = (
+				960BEC4E29AEAF8800DB4180 /* FullScreenViewController.swift */,
+				960BEC5029AEB0F200DB4180 /* FullScreenViewModel.swift */,
+			);
+			path = FullScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960BEC4529AE931600DB4180 /* APODView.xib in Resources */,
 				960BEC2029AE76C200DB4180 /* LaunchScreen.storyboard in Resources */,
 				960BEC1D29AE76C200DB4180 /* Assets.xcassets in Resources */,
 				960BEC1829AE76C100DB4180 /* Main.storyboard in Resources */,
@@ -191,12 +238,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				960BEC2F29AE7FA000DB4180 /* APODViewModel.swift in Sources */,
+				960BEC3B29AE85AD00DB4180 /* Constants.swift in Sources */,
+				960BEC3929AE840B00DB4180 /* APODResponseParser.swift in Sources */,
+				960BEC5129AEB0F200DB4180 /* FullScreenViewModel.swift in Sources */,
 				960BEC1529AE76C100DB4180 /* APODViewController.swift in Sources */,
+				960BEC4729AE964C00DB4180 /* APODItemViewModel.swift in Sources */,
+				960BEC4F29AEAF8800DB4180 /* FullScreenViewController.swift in Sources */,
+				960BEC4329AE930100DB4180 /* APODView.swift in Sources */,
 				960BEC3329AE800B00DB4180 /* Storyboardable.swift in Sources */,
 				960BEC2D29AE7F3F00DB4180 /* BaseViewController.swift in Sources */,
+				960BEC3729AE83EA00DB4180 /* APODItemModel.swift in Sources */,
+				960BEC3529AE83DB00DB4180 /* PlanetaryAPODManager.swift in Sources */,
 				960BEC1B29AE76C100DB4180 /* WalEAssignment.xcdatamodeld in Sources */,
 				960BEC1129AE76C100DB4180 /* AppDelegate.swift in Sources */,
 				960BEC3129AE7FDA00DB4180 /* HomeCoordinator.swift in Sources */,
+				960BEC4B29AEA8D700DB4180 /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

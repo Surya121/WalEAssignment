@@ -11,15 +11,12 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    private var rootController: APODViewController = {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        return storyboard.instantiateInitialViewController() as! APODViewController
-    }()
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
-        let coordinator = HomeCoordinator()
+
+        var coordinator = HomeCoordinator()
         window?.rootViewController = coordinator.generateAPODScreen()
         window?.makeKeyAndVisible()
         return true

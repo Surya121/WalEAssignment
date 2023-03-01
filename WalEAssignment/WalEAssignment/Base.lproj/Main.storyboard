@@ -21,7 +21,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-184" y="4"/>
+            <point key="canvasLocation" x="-185.49618320610685" y="3.5211267605633805"/>
+        </scene>
+        <!--Full Screen View Controller-->
+        <scene sceneID="XGY-pr-BSM">
+            <objects>
+                <viewController storyboardIdentifier="FullScreenViewController" id="jYm-NO-laG" customClass="FullScreenViewController" customModule="WalEAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BRV-Il-BuU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GjG-oI-sQA">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gYM-A8-oKy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GjG-oI-sQA" firstAttribute="leading" secondItem="gYM-A8-oKy" secondAttribute="leading" id="0pI-sZ-xlQ"/>
+                            <constraint firstAttribute="bottom" secondItem="GjG-oI-sQA" secondAttribute="bottom" id="Sr9-VW-MyF"/>
+                            <constraint firstItem="GjG-oI-sQA" firstAttribute="trailing" secondItem="gYM-A8-oKy" secondAttribute="trailing" id="fnJ-yo-Mwf"/>
+                            <constraint firstItem="GjG-oI-sQA" firstAttribute="top" secondItem="BRV-Il-BuU" secondAttribute="top" id="ig4-NX-G4n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="GjG-oI-sQA" id="ag7-Fg-dXV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mml-mn-CiX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-996.18320610687022" y="-57.04225352112676"/>
         </scene>
     </scenes>
     <resources>

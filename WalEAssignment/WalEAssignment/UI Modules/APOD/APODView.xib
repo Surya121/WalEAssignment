@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="APODView" customModule="WalEAssignment" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="APODView" id="iN0-l3-epB" customClass="APODView" customModule="WalEAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fks-By-Pz5">
+                    <rect key="frame" x="40" y="50" width="40" height="18"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cie-NP-oUQ">
+                    <rect key="frame" x="40" y="368.66666666666669" width="313" height="67"/>
+                    <string key="text">will make the right side of the label stretch all the way to the right until its superview.  will make the right side of the label stretch all the way to the right until its superview.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S6q-jW-HkQ">
+                    <rect key="frame" x="40" y="84.666666666666686" width="313" height="250"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="iay-sU-O3N"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cie-NP-oUQ" secondAttribute="trailing" constant="40" id="H4T-N3-tpI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="S6q-jW-HkQ" secondAttribute="trailing" constant="40" id="PU6-r5-pvY"/>
+                <constraint firstItem="Fks-By-Pz5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="See-XQ-cc5"/>
+                <constraint firstItem="cie-NP-oUQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="TAQ-9o-xKZ"/>
+                <constraint firstItem="S6q-jW-HkQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="Trd-yo-kJ6"/>
+                <constraint firstItem="S6q-jW-HkQ" firstAttribute="top" secondItem="Fks-By-Pz5" secondAttribute="bottom" constant="16.670000000000002" id="q8x-al-Ehn"/>
+                <constraint firstItem="cie-NP-oUQ" firstAttribute="top" secondItem="S6q-jW-HkQ" secondAttribute="bottom" constant="34" id="tPG-N7-BO3"/>
+                <constraint firstItem="Fks-By-Pz5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="zcb-a0-nDW"/>
+            </constraints>
+            <connections>
+                <outlet property="explanationLabel" destination="cie-NP-oUQ" id="qOy-kY-B3t"/>
+                <outlet property="imageView" destination="S6q-jW-HkQ" id="wm1-aZ-PY3"/>
+                <outlet property="titleLabel" destination="Fks-By-Pz5" id="ZMa-Lh-79J"/>
+            </connections>
+            <point key="canvasLocation" x="-185.49618320610685" y="19.718309859154932"/>
+        </view>
+        <tapGestureRecognizer id="8d7-1U-pR6">
+            <connections>
+                <action selector="didTapImageView:" destination="iN0-l3-epB" id="Tiy-Lx-guS"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
